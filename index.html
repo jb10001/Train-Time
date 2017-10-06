@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Train Activity</title>
+  <!-- Added Moment JS -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+   <!-- LINK TO FIREBASE GOES HERE -->
+   <!-- BOOTSTRAP -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <!-- CSS LINK -->
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <!-- JAVASCRIPT/LOGIC LINK .. MOVE TO BOTTOM? -->
+   
+   <!-- JQUERY LINK .. MOVE TO BOTTOM? -->
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script src="assets/javascript/logic.js"></script>
+
+
+<body>
+	<h1>Train Activity, h1 tag</h1>
+	<h2>Testing CSS. This should be red. h2, tag</h2>
+<p>Background should be light yellow</p>
+<!-- 8:48pm, Reference Logic.JS sheet -->
+<!-- 9:43pm, works! -->
+<!-- 9:48pm CSS, works! -->
+
+	<!--JUMBOTRON FOR IMAGE/BANNER !-->
+	<div class="container">
+		<div class="jumbotron">
+			<h1 text class="text-center">Train Activity (test),
+										Anytime is Train Time!</h1>
+
+	</div>
+
+	<!--Insert FIRST, Panel Here !-->
+	<!-- Use "Panel", "Form", or... something else ? !-->
+	<div class="panel">
+		<!-- PANEL ONE / CONTAINER ONE, DISPLAYING TRAIN SCHEDULE -->
+		Current Train Schedule
+
+
+	    <!-- (*Rough) Outline/Requirements:
+	    	5 Columns, Table Style
+	    		Column 1: Train Name
+	    		Column 2: Destination
+	    		Column 3: Frequency (min)
+	    		Column 4: Next Arrival
+	    		Column 5: Minutes Away
+	    							-->
+
+
+
+
+
+		<!-- PANEL TWO / FORM CONTAINER TWO -->
+		Add Train
+		
+		<!-- (*Rough) Outline/Requirements:
+			Form Submit
+			Form 1: Train Name
+			Form 2: Destination
+			Form 3: First Train Time (HH:mm military time)
+			Form 4: Frequency (min)
+									-->
+		<div class="input-group">
+  			<span class="input-group-addon" id="basic-addon1">@</span>
+  			<input type="text" class="form-control" id="trainName" placeholder="Train Name" aria-describedby="basic-addon1">
+  			<input type="text" class="form-control" id="destination" placeholder="Destination" aria-describedby="basic-addon1">
+  			<input type="text" class="form-control" id="firstTrainTime" placeholder="First Train Time" aria-describedby="basic-addon1">
+  			<input type="text" class="form-control" id="frequency" placeholder="Frequency" aria-describedby="basic-addon1">
+		</div>
+		<button id="btn">Submit</button>
+		<!-- Other Requirements **
+		  Code this app to calculate when the next train will arrive; this should be relative to the current time.
+          Users from many different machines must be able to view same train times.
+          + incorporate Firebase   to Store data .. hosts arrival and departure times
+									-->
+<!-- Tutor assignment To:
+			Add ID's to the Inputs
+			Check in tomorrow at 5pm
+						-->
+
+</body>
+</head>
+</html>
